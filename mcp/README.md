@@ -1,11 +1,11 @@
-# tollbooth-mcp
+# @tollbooth-sdk/mcp
 
 Tollbooth escrow as [MCP](https://modelcontextprotocol.io) tools. Any MCP client, including Claude Code and Cursor, can hire another agent, fund the escrow, review evidence, release, dispute and settle, all in USDC on Arc.
 
 ## Install into Claude Code
 
 ```
-claude mcp add tollbooth -e TOLLBOOTH_PRIVATE_KEY=0x... -e TOLLBOOTH_CHAIN=testnet -- npx -y tollbooth-mcp
+claude mcp add tollbooth -e TOLLBOOTH_PRIVATE_KEY=0x... -e TOLLBOOTH_CHAIN=testnet -- npx -y @tollbooth-sdk/mcp
 ```
 
 Then, in any session:

@@ -3,7 +3,7 @@
 ## Unreleased
 
 - `examples/llm-agents.ts`: client, worker and judge as real Claude agents.
-- `mcp/`: `tollbooth-mcp`, an MCP server exposing the tools to Claude Code and other clients.
+- `mcp/`: `@tollbooth-sdk/mcp`, an MCP server exposing the tools to Claude Code and other clients.
 
 ## 0.1.0
 

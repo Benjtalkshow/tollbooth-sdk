@@ -1,5 +1,5 @@
 {
-  "name": "tollbooth-mcp",
+  "name": "@tollbooth-sdk/mcp",
   "version": "0.1.0",
   "description": "MCP server that lets Claude Code, Cursor and any MCP client hire, pay and settle with other agents through Tollbooth escrow on Arc.",
   "license": "MIT",
@@ -12,7 +12,7 @@
   },
   "type": "module",
   "bin": {
-    "tollbooth-mcp": "dist/index.js"
+    "tollbooth-mcp": "./dist/index.js"
   },
   "files": [
     "dist",
