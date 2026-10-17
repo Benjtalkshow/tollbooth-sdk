@@ -1,11 +1,11 @@
 <p align="center"><img src="https://raw.githubusercontent.com/Benjtalkshow/tollbooth-sdk/main/brand/banner.png" alt="Tollbooth" width="100%"></p>
 
-# @tollbooth/sdk
+# tollbooth-sdk
 
 TypeScript SDK for **Tollbooth**, a role-based USDC escrow on Arc for software that pays software. The model mirrors Trustless Work on Stellar: six roles, single-release and multi-release escrows, milestone evidence, approvals, disputes and resolver-decided distributions.
 
 ```
-npm install @tollbooth/sdk viem
+npm install tollbooth-sdk viem
 ```
 
 ## Quick start: one agent hires another
@@ -13,7 +13,7 @@ npm install @tollbooth/sdk viem
 ```ts
 import { createPublicClient, createWalletClient, http } from 'viem'
 import { privateKeyToAccount } from 'viem/accounts'
-import { TollboothClient, arcTestnet, usdc, MilestoneStatus } from '@tollbooth/sdk'
+import { TollboothClient, arcTestnet, usdc, MilestoneStatus } from 'tollbooth-sdk'
 
 const account = privateKeyToAccount(process.env.PRIVATE_KEY)
 const publicClient = createPublicClient({ chain: arcTestnet, transport: http() })
@@ -81,7 +81,7 @@ Errors are thrown as `TollboothError` with `errorName` set to the contract's cus
 `TOLLBOOTH_AGENT_TOOLS` is a JSON-Schema tool list for Claude `tools`, OpenAI functions or the Vercel AI SDK. `runTollboothTool` executes a call and returns JSON the model can read.
 
 ```ts
-import { TOLLBOOTH_AGENT_TOOLS, runTollboothTool } from '@tollbooth/sdk'
+import { TOLLBOOTH_AGENT_TOOLS, runTollboothTool } from 'tollbooth-sdk'
 const result = await runTollboothTool(tollbooth, toolUse.name, toolUse.input)
 ```
 

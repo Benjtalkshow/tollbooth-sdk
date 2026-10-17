@@ -1,5 +1,5 @@
 {
-  "name": "@tollbooth/sdk",
+  "name": "tollbooth-sdk",
   "version": "0.1.0",
   "description": "TypeScript SDK for Tollbooth, a role-based USDC escrow on Arc for software that pays software. Typed client plus LLM tool definitions.",
   "license": "MIT",
