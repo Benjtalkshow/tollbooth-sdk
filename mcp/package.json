@@ -12,7 +12,7 @@
   },
   "type": "module",
   "bin": {
-    "tollbooth-mcp": "./dist/index.js"
+    "tollbooth-mcp": "dist/index.js"
   },
   "files": [
     "dist",
