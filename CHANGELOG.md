@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.1
+
+- Docs and comments reworded; no code changes.
+
 ## Unreleased
 
 - `examples/llm-agents.ts`: client, worker and judge as real Claude agents.
