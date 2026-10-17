@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.2
+
+- Arc mainnet deployment address added: 0xB35078B2D3570f05Fb3390D8a1f2Df1E3e787532.
+
 ## 0.1.1
 
 - Docs and comments reworded; no code changes.
