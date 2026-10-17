@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+- `examples/llm-agents.ts`: client, worker and judge as real Claude agents.
+- `mcp/`: `tollbooth-mcp`, an MCP server exposing the tools to Claude Code and other clients.
+
 ## 0.1.0
 
 - First release. Typed client for the Tollbooth v2 contract on Arc Testnet.

@@ -1,0 +1,51 @@
+{
+  "name": "tollbooth-mcp",
+  "version": "0.1.0",
+  "description": "MCP server that lets Claude Code, Cursor and any MCP client hire, pay and settle with other agents through Tollbooth escrow on Arc.",
+  "license": "MIT",
+  "author": "Benjtalkshow",
+  "homepage": "https://github.com/Benjtalkshow/tollbooth-sdk/tree/main/mcp#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Benjtalkshow/tollbooth-sdk.git",
+    "directory": "mcp"
+  },
+  "type": "module",
+  "bin": {
+    "tollbooth-mcp": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json && chmod +x dist/index.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "tollbooth-sdk": "^0.1.0",
+    "viem": "^2.21.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "typescript": "^5.6.0"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "arc",
+    "usdc",
+    "escrow",
+    "agents",
+    "tollbooth"
+  ]
+}
