@@ -19,7 +19,7 @@ Then, in any session:
   "mcpServers": {
     "tollbooth": {
       "command": "npx",
-      "args": ["-y", "tollbooth-mcp"],
+      "args": ["-y", "@tollbooth-sdk/mcp"],
       "env": { "TOLLBOOTH_PRIVATE_KEY": "0x...", "TOLLBOOTH_CHAIN": "testnet" }
     }
   }
